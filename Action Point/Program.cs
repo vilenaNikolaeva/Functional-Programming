@@ -1,0 +1,17 @@
+﻿using System;
+using System.Linq;
+
+namespace Action_Point
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Action<string> print = n => Console.WriteLine(n);
+            Console.ReadLine()
+                .Split(" ")
+                .ToList()
+                .ForEach(print);
+        }
+    }
+}
